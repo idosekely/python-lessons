@@ -22,7 +22,3 @@ y = ' '
 z = 'world!'
 w = x + y + z
 print w
-
-# you can insert your own data!
-x = raw_input("please enter your name: ")
-print 'welcome to the first lesson, %s!' %x
