@@ -4,7 +4,7 @@ __author__ = 'sekely'
 we are using variables almost everywhere in the code.
 variables are used to store results, calculations and many more.
 
-this of it as the famous "x" from highschool
+this of it as the famous "x" from high school
 x = 5, right?
 
 the only thing is, that in Python "x" can store anything

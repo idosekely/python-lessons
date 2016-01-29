@@ -12,7 +12,7 @@ print "the sum of these numbers is: %s" % (a + b)
 print "and the average is: %s" % ((a + b) / 2.0)
 
 # let's fix!
-# print "the sum of these numbers is: %s" % (int(a) + int(b))
-# print "and the average is: %s" % ((int(a) + int(b)) / 2.0)
+print "the sum of these numbers is: %s" % (int(a) + int(b))
+print "and the average is: %s" % ((int(a) + int(b)) / 2.0)
 
 # can we do it a bit better?

@@ -18,7 +18,7 @@ else:
     print "your number is not big enough!"
 
 # blocks of code are distinguish by using indentation.
-# in python, the standart is using the TAB key, with 4 spaces
+# in python, the standard is using the TAB key, with 4 spaces
 
 # the for loop
 for x in range(5):
