@@ -1,5 +1,5 @@
-__author__ = 'sekely'
 from getpass import getpass
+__author__ = 'sekely'
 
 
 '''
