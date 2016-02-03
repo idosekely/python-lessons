@@ -28,7 +28,7 @@ Lesson 1 - Hello world!
 * Input-Output
 * Exercise - Input and Output
 
-Lesson 2 - Control flow
+Lesson 2 - Flow control
 -----------------------
 * how to make a decision in a code?
 * how to make multiple decisions?
