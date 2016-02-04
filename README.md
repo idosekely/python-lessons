@@ -1,4 +1,3 @@
-# python-lessons
 Python Course For non-Programmers
 =================================
 
@@ -44,3 +43,10 @@ Lesson 3 - Data structures
 * basic data structs (dict, list, tuple, set)
 * files - data consistency
 * exercise - files and structs
+
+Lesson 4 - Objects
+------------------
+* what is an object?
+* what is inheritance?
+* everyone has a Father. and a Mother. and another Father?
+* exercise - classes and inheritance
