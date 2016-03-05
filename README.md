@@ -50,3 +50,11 @@ Lesson 4 - Objects
 * what is inheritance?
 * everyone has a Father. and a Mother. and another Father?
 * exercise - classes and inheritance
+
+Lesson 5 - Communication
+------------------------
+* sockets, addresses
+* tcp / udp
+* simple echo client-server
+* exercise - communication
+
