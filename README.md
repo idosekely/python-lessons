@@ -58,3 +58,9 @@ Lesson 5 - Communication
 * simple echo client-server
 * exercise - communication
 
+Lesson 6 - HTTP and REST api
+-----------------------------
+* http - the heart of web browsing
+* REST api
+* Json struct
+
