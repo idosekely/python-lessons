@@ -34,7 +34,7 @@ def scheduled(period, delay=None, loop_count=None):
 
 
 class TollRoad(object):
-    _sample_rate = 5 * 60  # 1 min
+    _sample_rate = 5 * 60  # 5 min
     _csv_file = '/tmp/toll_road.csv'
 
     def __init__(self):
