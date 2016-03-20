@@ -4,6 +4,7 @@ import time
 import datetime
 from functools import wraps
 import csv
+import sys
 
 __author__ = 'sekely'
 
@@ -66,14 +67,21 @@ class TollRoad(object):
 
     @scheduled(period=_sample_rate)
     def start_sampling(self):
+        ts = str(datetime.datetime.now())
         try:
             price = self.get_price()
         except:
             price = None
-        data = {'timestamp': str(datetime.datetime.now()),
+        data = {'timestamp': ts,
                 'price': price}
         self.save_to_csv(data=data)
 
 if __name__ == '__main__':
-    tr = TollRoad()
-    tr.start_sampling()
+    try:
+        print "starting toll road server"
+        tr = TollRoad()
+        tr.start_sampling()
+    except KeyboardInterrupt as e:
+        print "shutting down sampling"
+        sys.exit(0)
+    sys.exit(1)
