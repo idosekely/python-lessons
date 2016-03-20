@@ -64,3 +64,8 @@ Lesson 6 - HTTP and REST api
 * REST api
 * Json struct
 
+Lesson 7 - Data analysis
+-----------------------------
+* introduction to Pandas
+* basic time frames
+* exercise - analyzing toll road
