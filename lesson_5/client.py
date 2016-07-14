@@ -11,14 +11,14 @@ class SimpleClient(object):
         # Create a TCP/IP socket
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-        print 'connecting to %s port %s' % server_address
+        print('connecting to %s port %s' % server_address)
         self.sock.connect(server_address)
 
     def send(self, message=None):
         try:
             # Send data
             message = message or 'This is the default message. It will be repeated.'
-            print 'sending "%s"' % message
+            print('sending "%s"' % message)
             self.sock.sendall(message)
 
             # Look for the response
@@ -28,13 +28,13 @@ class SimpleClient(object):
             while amount_received < amount_expected:
                 data = self.sock.recv(self.buf)
                 amount_received += len(data)
-                print 'received "%s"' % data
+                print('received "%s"' % data)
         except Exception as e:
-            print 'caught exception: %s' % str(e)
+            print('caught exception: %s' % str(e))
             self.sock.close()
 
     def close(self):
-        print 'closing socket'
+        print('closing socket')
         self.sock.close()
 
 if __name__ == '__main__':

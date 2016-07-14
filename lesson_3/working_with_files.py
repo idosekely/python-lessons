@@ -25,7 +25,7 @@ f.close()
 
 f = open('save_file.save', 'r')  # now we only need to read from the file
 d = pickle.load(f)
-print d
+print(d)
 f.close()
 
 # another useful file type is csv ("Comma Separated Values")
@@ -63,4 +63,4 @@ with open("new_table.csv", 'r') as f:
     reader = csv.DictReader(f)
     for row in reader:
         rows.append(row)
-print rows
+print(rows)

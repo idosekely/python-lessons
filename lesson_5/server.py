@@ -7,7 +7,7 @@ class SimpleServer(object):
     def __init__(self, addr='localhost', port=50000, buf=1024):
         self.buf = buf
         self.server_address = (addr, port)
-        print 'setting up server up on %s port %s' % self.server_address
+        print('setting up server up on %s port %s' % self.server_address)
         self._bind()
 
     def _bind(self):
@@ -20,7 +20,7 @@ class SimpleServer(object):
         self.sock.listen(1)
 
     def _accept(self):
-        print 'waiting for a connection'
+        print('waiting for a connection')
         # Wait for a connection
         connection, client_address = self.sock.accept()
         return connection, client_address
@@ -33,19 +33,19 @@ class SimpleServer(object):
                 # Receive the data in small chunks and retransmit it
                 while True:
                     data = connection.recv(self.buf)
-                    print 'received "%s"' % data
+                    print('received "%s"' % data)
                     if data:
-                        print 'sending data back to the client'
+                        print('sending data back to the client')
                         connection.sendall(data)
                     else:
-                        print 'no more data from', client_address
+                        print('no more data from', client_address)
                         break
             finally:
                 # Clean up the connection
                 connection.close()
 
     def stop(self):
-        print "\nclosing server"
+        print("\nclosing server")
         self.sock.close()
 
 if __name__ == '__main__':

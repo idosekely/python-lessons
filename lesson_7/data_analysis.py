@@ -15,16 +15,16 @@ df.describe()  # returns count, mean, std, min, 25%, 50%, 75%, max for each colu
 df.sort_values(by='B')
 
 # selecting a specific column
-print df['B']
+print(df['B'])
 
 # selecting rows
-print df['20160101 1201':'20160101 1203']
+print(df['20160101 1201':'20160101 1203'])
 
 # select column and row
-print df.loc['20160101 1201':'20160101 1203', ['B']]
+print(df.loc['20160101 1201':'20160101 1203', ['B']])
 
 # selecting by boolean expression
-print df[df.A > 0]
+print(df[df.A > 0])
 
 # creating graphs
 plot1 = df.plot()

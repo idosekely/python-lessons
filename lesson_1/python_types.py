@@ -48,10 +48,10 @@ try it!
 
 # strings and some string manipulation
 len('hello')                          # 5
-print 'hello ' + 'world'              # 'hello world'
-print 'this is %s format' % 'string'  # 'this is string format'
-print 'My Name'.upper()               # 'MY NAME'
-print 'My Name'.lower()               # 'my name'
+print(('hello ' + 'world'))              # 'hello world'
+print(('this is %s format' % 'string'))  # 'this is string format'
+print(('My Name'.upper()))               # 'MY NAME'
+print(('My Name'.lower()))               # 'my name'
 
 # boolean expression and algebra
 not False       # True

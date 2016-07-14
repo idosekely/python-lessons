@@ -28,15 +28,15 @@ d2['a'] = 1
 d2['b'] = 2
 
 # some useful dict methods
-d.iterkeys()    # return list of keys. see list below
-d.itervalues()  # return list of values
-d.iteritems()   # return list of tuples. on tuples, see below
+iter(d.keys())    # return list of keys. see list below
+iter(d.values())  # return list of values
+iter(d.items())   # return list of tuples. on tuples, see below
 len(d)          # return 2
 
 # how to search in a dict? few ways
-d.has_key('a')       # return True
+'a' in d       # return True
 'a' in d             # return True
-'a' in d.iterkeys()  # return True
+'a' in iter(d.keys())  # return True
 d['a']               # return 1
 d.get('a')           # return 1
 d['c']               # KeyError!
@@ -100,7 +100,7 @@ think of it as group of friends. the order doesn't matter, and each person is un
 '''
 
 s = set([1, 1, 1, 2, 3])
-print s                  # set([1, 2, 3])
+print(s)                  # set([1, 2, 3])
 s.add(4)                 # set([1, 2, 3, 4])
 s.add(2)                 # set([1, 2, 3, 4])
 

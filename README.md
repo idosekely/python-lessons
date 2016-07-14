@@ -12,7 +12,20 @@ Each lesson should be 2.5-3 hours
 
 Pre-requirements
 ----------------
-Install python 2.7 from [here](https://www.python.org/downloads/release/python-2711/)
+* Python 3
+    * Windows Users <br>
+    https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe
+    * Mac Users <br>
+    https://www.python.org/ftp/python/3.5.2/python-3.5.2-macosx10.6.pkg
+
+* Git - https://desktop.github.com/
+
+* Developing tool
+    * Pycharm (full blown tool) <br>
+    https://www.jetbrains.com/pycharm/download/
+    * Sublime 3 (lighter tool) <br>
+    http://www.sublimetext.com/3
+
 
 Samples
 -------

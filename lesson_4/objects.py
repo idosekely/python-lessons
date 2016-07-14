@@ -57,9 +57,9 @@ alice.add_employee(john)
 alice.add_employee(bob)
 alice.raise_salary(1100)
 
-print bob.salary                     # 800
-print alice.employee_list            # what will be printed?
-print alice.employee_list[0].salary  # 700
+print(bob.salary)                     # 800
+print(alice.employee_list)            # what will be printed?
+print(alice.employee_list[0].salary)  # 700
 
 '''
 you can do a lot with classes and instances.

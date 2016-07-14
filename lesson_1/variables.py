@@ -14,11 +14,11 @@ the only thing is, that in Python "x" can store anything
 x = 5
 y = x + 3
 
-print y
+print(y)
 
 # what about this? will it work?
 x = 'hello'
 y = ' '
 z = 'world!'
 w = x + y + z
-print w
+print(w)

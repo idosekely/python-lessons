@@ -39,7 +39,7 @@ def user_account():
         if user:
             return '%s %s phone number is %s\n' % tuple(user)
         else:
-            return json.dumps(users.values())
+            return json.dumps(list(users.values()))
 
 
 if __name__ == '__main__':

@@ -4,7 +4,7 @@ __author__ = 'sekely'
 
 
 packages = ['requests', 'pandas', 'numpy', 'flask', ]
-print "this will install python lessons dependecies"
+print("this will install python lessons dependencies")
 
 for package in packages:
     pip.main(['install', package])

@@ -25,7 +25,7 @@ multiply_by_3(5)  # will return 15
 
 
 def sum_2(x, y):
-    print "the sum is: %s" % x + y
+    print("the sum is: %s" % x + y)
     return x + y
 
 a = sum_2(1, 3)  # will print "the sum is: 4" and will return 4 into a
@@ -44,8 +44,8 @@ sum_3(1, 3)   # return 4
 
 # follow carefully on the positional arguments and the keyword arguments
 def test(a=1, b=5):
-    print a
-    print b
+    print(a)
+    print(b)
 
 test()
 test(1, 2)
@@ -56,8 +56,8 @@ test(b=1, a=5)
 
 # you can create general methods that can accept anything!
 def foo(*args, **kwargs):
-    print args
-    print kwargs
+    print(args)
+    print(kwargs)
 
 foo()
 foo(1, 2, 3)
