@@ -25,7 +25,7 @@ multiply_by_3(5)  # will return 15
 
 
 def sum_2(x, y):
-    print("the sum is: %s" % x + y)
+    print("the sum is: %s" % str(x + y))
     return x + y
 
 a = sum_2(1, 3)  # will print "the sum is: 4" and will return 4 into a
