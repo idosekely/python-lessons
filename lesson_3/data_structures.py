@@ -28,10 +28,10 @@ d2['a'] = 1
 d2['b'] = 2
 
 # some useful dict methods
-iter(d.keys())    # return list of keys. see list below
-iter(d.values())  # return list of values
-iter(d.items())   # return list of tuples. on tuples, see below
-len(d)          # return 2
+d.keys()    # return list of keys. see list below
+d.values()  # return list of values
+d.items()   # return list of tuples. on tuples, see below
+len(d)      # return 2
 
 # how to search in a dict? few ways
 'a' in d       # return True
@@ -99,16 +99,16 @@ each object will appear exactly once, and the order is not guaranteed.
 think of it as group of friends. the order doesn't matter, and each person is unique
 '''
 
-s = set([1, 1, 1, 2, 3])
-print(s)                  # set([1, 2, 3])
-s.add(4)                 # set([1, 2, 3, 4])
-s.add(2)                 # set([1, 2, 3, 4])
+s = {1, 1, 1, 2, 3}
+print(s)                  # {1, 2, 3}
+s.add(4)                  # {1, 2, 3, 4}
+s.add(2)                  # {1, 2, 3, 4}
 
 # sets and arithmetic
-s1 = set([1, 2, 3])
-s2 = set([3, 4, 5])
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
 
-s1.union(s2)         # union, set([1, 2, 3, 4, 5])
-s1 - s2              # the members of s1, that are not in s2 - set([1, 2])
-s2 - s1              # set([4, 5])
-s1.intersection(s2)  # intersection, the common. set([3])
+s1.union(s2)         # union, {1, 2, 3, 4, 5}
+s1 - s2              # the members of s1, that are not in s2 - {1, 2}
+s2 - s1              # {4, 5}
+s1.intersection(s2)  # intersection, the common. {3}
