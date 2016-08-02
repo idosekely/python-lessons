@@ -12,6 +12,7 @@ how can we tell a certain piece of code to run few times?
 x = input("please enter number: ")
 x = int(x)
 
+x = 3
 if x > 3:
     print(x)
 else:
